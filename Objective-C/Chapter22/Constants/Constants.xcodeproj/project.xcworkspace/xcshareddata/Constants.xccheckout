@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>A2DDAD30-A3B4-4E48-BB25-1C5026D39122</string>
+	<string>8FB2428F-E858-4A12-8D2D-385B7D023CFE</string>
 	<key>IDESourceControlProjectName</key>
-	<string>BMITime_18</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>70957976B8C675BF430AC0A8F880781EA5E33C31</key>
 		<string>https://github.com/perettijuan/BigNerdRanch.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Objective-C/Chapter18/BMITime_18/BMITime_18.xcodeproj</string>
+	<string>Objective-C/Chapter22/Constants/Constants.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>70957976B8C675BF430AC0A8F880781EA5E33C31</key>
