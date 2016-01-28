@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>1C7AE334-25A9-44CB-A28A-6454EE587687</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>iTahDoodle</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>70957976B8C675BF430AC0A8F880781EA5E33C31</key>
 		<string>https://github.com/perettijuan/BigNerdRanch.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Objective-C/Chapter27_Event-Driven_Applications/iTahDoodle/iTahDoodle.xcodeproj/project.xcworkspace</string>
+	<string>Objective-C/Chapter27_Event-Driven_Applications/iTahDoodle/iTahDoodle.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>70957976B8C675BF430AC0A8F880781EA5E33C31</key>

@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>9E26F50D-C59F-4D42-B439-83D4ADCFF7E5</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>VowelMovement</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>70957976B8C675BF430AC0A8F880781EA5E33C31</key>
 		<string>https://github.com/perettijuan/BigNerdRanch.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Objective-C/Chapter32_Blocks/VowelMovement/VowelMovement.xcodeproj/project.xcworkspace</string>
+	<string>Objective-C/Chapter32_Blocks/VowelMovement/VowelMovement.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>70957976B8C675BF430AC0A8F880781EA5E33C31</key>

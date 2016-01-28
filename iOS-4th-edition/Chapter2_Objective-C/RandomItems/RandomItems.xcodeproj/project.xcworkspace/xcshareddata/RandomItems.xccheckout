@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>CA26AFCB-3351-4A86-9BF3-8084301767DA</string>
+	<string>73E49F24-4D38-44BB-B9AF-A5B3E6457A0D</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Appliances</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>70957976B8C675BF430AC0A8F880781EA5E33C31</key>
 		<string>https://github.com/perettijuan/BigNerdRanch.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Objective-C/Chapter29_init/Appliances/Appliances.xcodeproj</string>
+	<string>iOS-4th-edition/Chapter2_Objective-C/RandomItems/RandomItems.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>70957976B8C675BF430AC0A8F880781EA5E33C31</key>
