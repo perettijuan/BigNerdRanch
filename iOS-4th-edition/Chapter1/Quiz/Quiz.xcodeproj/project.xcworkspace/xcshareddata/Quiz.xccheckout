@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>BD76E385-CC29-42D9-B7B1-A88703BE7CAC</string>
+	<string>EA4C3F61-9FA2-4D8D-A94D-CB38214FD3FD</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Callbacks</string>
+	<string>Quiz</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>70957976B8C675BF430AC0A8F880781EA5E33C31</key>
 		<string>https://github.com/perettijuan/BigNerdRanch.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Objective-C/Chapter24_Callbacks/Callbacks/Callbacks.xcodeproj</string>
+	<string>iOS-4th-edition/Chapter1/Quiz/Quiz.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>70957976B8C675BF430AC0A8F880781EA5E33C31</key>
