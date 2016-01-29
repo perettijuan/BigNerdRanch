@@ -6,9 +6,9 @@
 //  Copyright (c) 2016 Juan Pablo Peretti. All rights reserved.
 //
 
-#import "JRIItem.h"
+#import "BNRItem.h"
 
-@implementation JRIItem
+@implementation BNRItem
 
 
 +(instancetype) randomItem
@@ -33,7 +33,7 @@
                                     'A' + arc4random() % 26,
                                     'O' + arc4random() % 10];
 
-    JRIItem *newItem = [[self alloc] initWithName:randomName valueInDollars:randromValue serialNumber:randomSerialNumber];
+    BNRItem *newItem = [[self alloc] initWithName:randomName valueInDollars:randromValue serialNumber:randomSerialNumber];
     return newItem;
 }
 
@@ -53,68 +53,33 @@
     return self;
 }
 
+-(instancetype) initwithName:(NSString *)name serialNumber:(NSString *)serialNumber
+{
+    return [self initWithName:name valueInDollars:0 serialNumber:serialNumber];
+}
 
 -(instancetype) initWithName:(NSString *)name
 {
     return [self initWithName:name valueInDollars:0 serialNumber:@""];
 }
 
-
 -(instancetype) init
 {
     return [self initWithName:@"Item"];
 }
 
-// Silver challenge: “Create another initializer method for the BNRItem class. This initializer is not the designated initializer of BNRItem. It takes an instance of NSString that identifies the itemName of the item and an instance of NSString that identifies the serialNumber.”
--(instancetype) initwithName:(NSString *)name serialNumber:(NSString *)serialNumber
+
+// Custom setter to allow referencing
+-(void)setContainedItem:(BNRItem *)containedItem
 {
-    return [self initWithName:name valueInDollars:0 serialNumber:serialNumber];
+    _containedItem = containedItem;
+    self.containedItem.container = self;
 }
 
-
--(void) setItemName:(NSString *)itemName
+-(void) dealloc
 {
-    _itemName = itemName;
+    NSLog(@"Destroyed: %@", self);
 }
-
--(NSString *) itemName
-{
-    return _itemName;
-}
-
--(void) setSerialNumber:(NSString *)serialNumber
-{
-    _serialNumber = serialNumber;
-}
-
--(NSString *) serialNumber
-{
-    return _serialNumber;
-}
-
--(void) setValueInDollars:(int)valueInDollars
-{
-    _valueInDollars = valueInDollars;
-}
-
--(int) valueInDollars
-{
-    return _valueInDollars;
-}
-
-
--(void) setDateCreated:(NSDate *)dateCreated
-{
-    _dateCreated = dateCreated;
-}
-
--(NSDate *) dateCreated
-{
-    return _dateCreated;
-}
-
-/////////// en setters and getters //////////////
-
 
 // Override description
 -(NSString *) description

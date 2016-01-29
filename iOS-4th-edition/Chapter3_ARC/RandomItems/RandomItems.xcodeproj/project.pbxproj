@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B25DD7C1C5AA2110012F740 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B25DD7B1C5AA2110012F740 /* main.m */; };
-		9B25DD861C5AA5920012F740 /* JRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B25DD851C5AA5920012F740 /* JRItem.m */; };
+		9B25DD861C5AA5920012F740 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B25DD851C5AA5920012F740 /* BNRItem.m */; };
 		9BD9432F1C5BB3ED0061F40C /* JRIContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9432E1C5BB3ED0061F40C /* JRIContainer.m */; };
 /* End PBXBuildFile section */
 
@@ -27,9 +27,9 @@
 /* Begin PBXFileReference section */
 		9B25DD781C5AA2110012F740 /* RandomItems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RandomItems; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B25DD7B1C5AA2110012F740 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9B25DD841C5AA5920012F740 /* JRIItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRIItem.h; sourceTree = "<group>"; };
-		9B25DD851C5AA5920012F740 /* JRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRItem.m; sourceTree = "<group>"; };
-		9BD9432D1C5BB3ED0061F40C /* JRIContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRIContainer.h; sourceTree = "<group>"; };
+		9B25DD841C5AA5920012F740 /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
+		9B25DD851C5AA5920012F740 /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
+		9BD9432D1C5BB3ED0061F40C /* BNRContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRContainer.h; sourceTree = "<group>"; };
 		9BD9432E1C5BB3ED0061F40C /* JRIContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRIContainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,9 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				9B25DD7B1C5AA2110012F740 /* main.m */,
-				9B25DD841C5AA5920012F740 /* JRIItem.h */,
-				9B25DD851C5AA5920012F740 /* JRItem.m */,
-				9BD9432D1C5BB3ED0061F40C /* JRIContainer.h */,
+				9B25DD841C5AA5920012F740 /* BNRItem.h */,
+				9B25DD851C5AA5920012F740 /* BNRItem.m */,
+				9BD9432D1C5BB3ED0061F40C /* BNRContainer.h */,
 				9BD9432E1C5BB3ED0061F40C /* JRIContainer.m */,
 			);
 			path = RandomItems;
@@ -129,7 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BD9432F1C5BB3ED0061F40C /* JRIContainer.m in Sources */,
-				9B25DD861C5AA5920012F740 /* JRItem.m in Sources */,
+				9B25DD861C5AA5920012F740 /* BNRItem.m in Sources */,
 				9B25DD7C1C5AA2110012F740 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

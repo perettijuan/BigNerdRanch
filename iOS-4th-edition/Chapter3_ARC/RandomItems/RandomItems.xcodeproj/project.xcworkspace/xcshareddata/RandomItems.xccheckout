@@ -14,11 +14,11 @@
 		<string>https://github.com/perettijuan/BigNerdRanch.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iOS-4th-edition/Chapter2_Objective-C/Challenge/RandomItems/RandomItems.xcodeproj</string>
+	<string>iOS-4th-edition/Chapter3_ARC/RandomItems/RandomItems.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>70957976B8C675BF430AC0A8F880781EA5E33C31</key>
-		<string>../../../../../..</string>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/perettijuan/BigNerdRanch.git</string>

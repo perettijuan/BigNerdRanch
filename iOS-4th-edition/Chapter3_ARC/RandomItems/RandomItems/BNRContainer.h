@@ -6,17 +6,17 @@
 //  Copyright (c) 2016 Juan Pablo Peretti. All rights reserved.
 //
 
-#import "JRIItem.h"
+#import "BNRItem.h"
 
-@interface JRIContainer : JRIItem
+@interface BNRContainer : BNRItem
 {
     NSMutableArray *_subItems;
 }
 
 // Adds a new Sub item to the list of subitems
--(void)addNewSubItem:(JRIItem *) newItem;
+-(void)addNewSubItem:(BNRItem *) newItem;
 // Retrieves a Sub Item at a given position
--(JRIItem *)getSubItemAtPossition:(int)position;
+-(BNRItem *)getSubItemAtPossition:(int)position;
 // Retrieves the entire list of sub Items
 -(NSMutableArray *)getSubItems;
 

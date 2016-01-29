@@ -6,9 +6,9 @@
 //  Copyright (c) 2016 Juan Pablo Peretti. All rights reserved.
 //
 
-#import "JRIContainer.h"
+#import "BNRContainer.h"
 
-@implementation JRIContainer
+@implementation BNRContainer
 
 
 // Designated initializer
@@ -41,13 +41,13 @@
 }
 
 //////////// Class methods ///////////////////////////////
--(void) addNewSubItem:(JRIItem *)newItem
+-(void) addNewSubItem:(BNRItem *)newItem
 {
     [_subItems addObject:newItem];
-    _valueInDollars += newItem.valueInDollars;
+    self.valueInDollars += newItem.valueInDollars;
 }
 
--(JRIItem *) getSubItemAtPossition:(int)position
+-(BNRItem *) getSubItemAtPossition:(int)position
 {
     if(position < _subItems.count) {
         return _subItems[position];

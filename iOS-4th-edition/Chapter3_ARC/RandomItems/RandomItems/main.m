@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JRIItem.h"
-#import "JRIContainer.h"
+#import "BNRItem.h"
+#import "BNRContainer.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -16,47 +16,23 @@ int main(int argc, const char * argv[]) {
         
         NSMutableArray *items = [[NSMutableArray alloc] init];
         
-        [items addObject:@"One"];
-        [items addObject:@"Two"];
-        [items addObject:@"Three"];
-        [items addObject:@"Four"];
-        [items insertObject:@"Zero" atIndex:0];
+        BNRItem *backpack = [[BNRItem alloc] initWithName:@"backpack"];
+        [items addObject:backpack];
         
-        // Simply iterate on the array and print the data in it
-        for(int i = 0; i < [items count]; i++) {
-            NSString *current = [items objectAtIndex:i];
-            NSLog(@"Current is: %@", current);
-        }
+        BNRItem *calculator = [[BNRItem alloc] initWithName:@"calculator"];
+        [items addObject:calculator];
         
-        NSLog(@"------------- Optimize baby ---------------");
+        backpack.containedItem = calculator;
         
-        // Optimization: for-each loop
-        for(NSString *current in items) {
-            NSLog(@"Current is %@", current);
+        backpack = nil;
+        calculator = nil;
+        
+        for(BNRItem *item in items){
+            NSLog(@"%@", item);
         }
         
         
-        JRIItem *item = [[JRIItem alloc] initWithName:@"Red Sofa" valueInDollars:100 serialNumber:@"12RFG"];
-        JRIItem *itemWithName = [[JRIItem alloc] initWithName:@"Blue sofa"];
-        JRIItem *emptyItem = [[JRIItem alloc] init];
-        items = [[NSMutableArray alloc] init];
-        
-        
-        JRIContainer *container = [[JRIContainer alloc] initWithName:@"Item Container" valueInDollars:0 serialNumber:@""];
-        [container addNewSubItem:item];
-        [container addNewSubItem:itemWithName];
-        [container addNewSubItem:emptyItem];
-        
-        for(JRIItem *item in items) {
-            [container addNewSubItem:item];
-        }
-        
-        
-        JRIContainer *superContainer = [[JRIContainer alloc] initWithName:@"Super container" valueInDollars:0 serialNumber:@""];
-        [superContainer addNewSubItem:container];
-        
-        
-        NSLog(@"Super Container => %@", superContainer);
+        NSLog(@"Setting items to nil");
         
 
         items = nil;
