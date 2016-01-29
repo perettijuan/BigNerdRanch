@@ -60,10 +60,13 @@ int main(int argc, const char * argv[]) {
             [items addObject:item];
         }
         
+        
         for(Item *item in items) {
             NSLog(@"%@", item);
         }
         
+        
+
         items = nil;
         
     }

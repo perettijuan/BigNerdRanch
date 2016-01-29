@@ -22,8 +22,8 @@
     NSInteger nounIndex = arc4random() % [randomNounList count];
     
     NSString *randomName = [NSString stringWithFormat:@"%@ %@",
-                            [randomAdjectiveList objectAtIndex:adjectiveIndex],
-                            [randomNounList objectAtIndex:nounIndex]];
+                            randomAdjectiveList[adjectiveIndex],
+                            randomNounList[nounIndex]];
     int randromValue = arc4random() % 100;
     
     NSString *randomSerialNumber = [NSString stringWithFormat:@"%c%c%c%c%c",
