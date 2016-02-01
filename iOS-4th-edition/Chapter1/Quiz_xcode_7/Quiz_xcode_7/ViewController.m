@@ -22,8 +22,6 @@
 @implementation ViewController
 
 
-
-
 -(void) awakeFromNib
 {
     [super awakeFromNib];
