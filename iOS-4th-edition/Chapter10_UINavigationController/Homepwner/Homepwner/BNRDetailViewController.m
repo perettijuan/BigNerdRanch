@@ -21,6 +21,21 @@
 
 
 
+-(void) viewDidLoad
+{
+    [super viewDidLoad];
+    
+    UIToolbar *numberToolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    numberToolbar.barStyle = UIBarStyleBlackTranslucent;
+    numberToolbar.items = [NSArray arrayWithObjects:
+                           [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStyleDone target:self action:@selector(cancelValueEnter)],
+                           [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
+                           [[UIBarButtonItem alloc] initWithTitle:@"Apply" style:UIBarButtonItemStyleDone target:self action:@selector(doneValueEnter)],
+                           nil];
+    [numberToolbar sizeToFit];
+    self.valueField.inputAccessoryView = numberToolbar;
+}
+
 
 /*
  * Method called just before than the ViewController shows its view.
@@ -44,6 +59,20 @@
     
     self.dateLabel.text = [dateFormatter stringFromDate:item.dateCreated];
   }
+
+-(void) cancelValueEnter
+{
+    [self.valueField resignFirstResponder];
+    self.valueField.text = [NSString stringWithFormat:@"%d", _item.valueInDollars];
+}
+
+-(void) doneValueEnter
+{
+    BNRItem *item = self.item;
+    item.valueInDollars = [self.valueField.text intValue];
+    [self.valueField resignFirstResponder];
+
+}
 
 
 /*
