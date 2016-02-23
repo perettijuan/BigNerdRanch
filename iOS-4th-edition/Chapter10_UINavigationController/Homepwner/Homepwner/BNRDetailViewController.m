@@ -8,6 +8,7 @@
 
 #import "BNRDetailViewController.h"
 #import "BNRItem.h"
+#import "BNRChangeItemDateViewController.h"
 
 @interface BNRDetailViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
@@ -107,14 +108,17 @@
     self.navigationItem.title = _item.itemName;
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(IBAction)changeItemDate:(id)sender
+{
+    BNRChangeItemDateViewController *changeDateVC = [[BNRChangeItemDateViewController alloc] init];
+    changeDateVC.item = self.item;
+    
+    // Push it onto the top of the navigation controller's stack
+    [self.navigationController pushViewController:changeDateVC animated:YES];
+
+    
 }
-*/
+
 
 @end

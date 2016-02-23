@@ -12,6 +12,8 @@
 		9B2529951C6BD0FC005EC30B /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2529941C6BD0FC005EC30B /* BNRItemStore.m */; };
 		9B2C21F71C7514350019B64F /* BNRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C21F51C7514350019B64F /* BNRDetailViewController.m */; };
 		9B2C21F81C7514350019B64F /* BNRDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2C21F61C7514350019B64F /* BNRDetailViewController.xib */; };
+		9B93C7271C7CF9560098D46B /* BNRChangeItemDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B93C7251C7CF9560098D46B /* BNRChangeItemDateViewController.m */; };
+		9B93C7281C7CF9560098D46B /* BNRChangeItemDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B93C7261C7CF9560098D46B /* BNRChangeItemDateViewController.xib */; };
 		9B99DCC61C6536E200A5947C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B99DCC51C6536E200A5947C /* main.m */; };
 		9B99DCC91C6536E200A5947C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B99DCC81C6536E200A5947C /* AppDelegate.m */; };
 		9B99DCCC1C6536E200A5947C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B99DCCB1C6536E200A5947C /* ViewController.m */; };
@@ -39,6 +41,9 @@
 		9B2C21F41C7514350019B64F /* BNRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDetailViewController.h; sourceTree = "<group>"; };
 		9B2C21F51C7514350019B64F /* BNRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDetailViewController.m; sourceTree = "<group>"; };
 		9B2C21F61C7514350019B64F /* BNRDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRDetailViewController.xib; sourceTree = "<group>"; };
+		9B93C7241C7CF9560098D46B /* BNRChangeItemDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRChangeItemDateViewController.h; sourceTree = "<group>"; };
+		9B93C7251C7CF9560098D46B /* BNRChangeItemDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRChangeItemDateViewController.m; sourceTree = "<group>"; };
+		9B93C7261C7CF9560098D46B /* BNRChangeItemDateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRChangeItemDateViewController.xib; sourceTree = "<group>"; };
 		9B99DCC01C6536E200A5947C /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B99DCC41C6536E200A5947C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B99DCC51C6536E200A5947C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -106,6 +111,9 @@
 				9B2C21F41C7514350019B64F /* BNRDetailViewController.h */,
 				9B2C21F51C7514350019B64F /* BNRDetailViewController.m */,
 				9B2C21F61C7514350019B64F /* BNRDetailViewController.xib */,
+				9B93C7241C7CF9560098D46B /* BNRChangeItemDateViewController.h */,
+				9B93C7251C7CF9560098D46B /* BNRChangeItemDateViewController.m */,
+				9B93C7261C7CF9560098D46B /* BNRChangeItemDateViewController.xib */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -218,6 +226,7 @@
 			files = (
 				9B2C21F81C7514350019B64F /* BNRDetailViewController.xib in Resources */,
 				9B99DCD11C6536E200A5947C /* Images.xcassets in Resources */,
+				9B93C7281C7CF9560098D46B /* BNRChangeItemDateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B93C7271C7CF9560098D46B /* BNRChangeItemDateViewController.m in Sources */,
 				9B99DCCC1C6536E200A5947C /* ViewController.m in Sources */,
 				9B99DCC91C6536E200A5947C /* AppDelegate.m in Sources */,
 				9B2529921C6BD052005EC30B /* BNRItem.m in Sources */,
