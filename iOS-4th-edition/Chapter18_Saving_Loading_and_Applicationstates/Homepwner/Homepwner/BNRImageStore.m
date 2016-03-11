@@ -41,6 +41,11 @@
     
     if(self) {
         _dictionary = [[NSMutableDictionary alloc] init];
+        
+        // subscribe to the NSNotificationCenter to handle
+        // low memory issues if they appear
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+        [nc addObserver:self selector:@selector(clearCache:) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
     }
     
     return self;
@@ -87,6 +92,13 @@
     NSArray *documentsDirectory = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentDirectory = [documentsDirectory firstObject];
     return [documentDirectory stringByAppendingPathComponent:key];
+}
+
+// Called when the lo memory message is received
+-(void)clearCache:(NSNotification*)note
+{
+    NSLog(@"Flushing %ld images out of the cache", [self.dictionary count]);
+    [self.dictionary removeAllObjects];
 }
 
 @end
